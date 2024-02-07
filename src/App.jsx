@@ -1,10 +1,17 @@
-import './App.css';
+import Profile from './Components/Profile';
+import user from './data/user.json';
 
 function App() {
   return (
-    <h1 className="text-yellow-500 bg-stone-800 text-center font-bold uppercase text-xl">
-      TailWind CSS Vite Template
-    </h1>
+    <div className="bg-slate-300 py-3 h-dvh">
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+    </div>
   );
 }
 
