@@ -1,5 +1,7 @@
 import Profile from './Components/Profile';
+import Statistics from './Components/Statistics';
 import user from './data/user.json';
+import data from './data/data.json';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 }
